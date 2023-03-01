@@ -1,4 +1,4 @@
-#Wed Mar 01 13:39:40 EET 2023
+#Wed Mar 01 16:07:27 EET 2023
 base.0=C\:\\Sample Project\\daily-readings-21\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

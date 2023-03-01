@@ -9,6 +9,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../ui/theme_provider.dart';
 
+
 class HomeScreen extends StatefulWidget {
   static String route = '/home';
 
@@ -49,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           DateTime? selectedDate = provider.selectedDate;
           return Scaffold(
             appBar: AppBar(
-              backgroundColor: const Color.fromARGB(255, 71, 123, 171),
+              // backgroundColor: const Color.fromARGB(255, 71, 123, 171),
               elevation: 0,
               centerTitle: false,
               title: LayoutBuilder(
@@ -134,8 +135,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       child: Scaffold(
                         appBar: AppBar(
                           elevation: 0,
-                          backgroundColor:
-                              const Color.fromARGB(255, 71, 123, 171),
+                          // backgroundColor: const Color.fromARGB(255, 71, 123, 171),
                           flexibleSpace: TabBar(
                             labelColor: Colors.white,
                             tabs: [
@@ -146,7 +146,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     const Icon(Icons.wb_sunny),
                                     const SizedBox(width: 8),
                                     Text(AppLocalizations.of(context)!.morning,
-                                        style: TextStyle(color: Colors.white)),
+                                        style: const TextStyle(color: Colors.white)),
                                   ],
                                 ),
                               ),
@@ -157,7 +157,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                                     const Icon(Icons.wb_twighlight),
                                     const SizedBox(width: 8),
                                     Text(AppLocalizations.of(context)!.evening,
-                                        style: TextStyle(color: Colors.white)),
+                                        style: const TextStyle(color: Colors.white)),
                                   ],
                                 ),
                               ),
