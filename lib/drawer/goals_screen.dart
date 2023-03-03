@@ -69,7 +69,14 @@ class GoalsScreen extends StatelessWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [Text('SET'), ],
+                            children: [
+                              Text('SET',
+                                  style: TextStyle(
+                                    color: themeProvider.isDarkModeEnabled
+                                        ? Colors.white
+                                        : Colors.white,
+                                  )),
+                            ],
                           ),
                         ),
                       ),
@@ -86,7 +93,14 @@ class GoalsScreen extends StatelessWidget {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [Text('CANCEL')],
+                            children: [
+                              Text('CANCEL',
+                                  style: TextStyle(
+                                    color: themeProvider.isDarkModeEnabled
+                                        ? Colors.white
+                                        : Colors.white,
+                                  )),
+                            ],
                           ),
                         ),
                       ),
