@@ -8,6 +8,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BibleScreen extends StatelessWidget {
   static String route = '/bible';
+
   const BibleScreen({Key? key}) : super(key: key);
 
   @override
@@ -55,8 +56,8 @@ class BibleScreen extends StatelessWidget {
           child: SingleChildScrollView(
             child: Center(
               child: Column(
-                children: const [
-                  Padding(
+                children:  [
+                  const Padding(
                     padding: EdgeInsets.only(bottom: 12.0),
                     child: Text(
                       "Genesis 1",
@@ -73,10 +74,11 @@ class BibleScreen extends StatelessWidget {
                     textDirection: TextDirection.ltr,
                     textAlign: TextAlign.justify,
                     style: TextStyle(
-                        color: themeProvider.isDarkModeEnabled
-                            ? Colors.black
-                            : Colors.white,
-                        fontSize: 22),
+                      color: themeProvider.isDarkModeEnabled
+                          ? Colors.black
+                          : Colors.white,
+                      fontSize: 22,
+                    ),
                   ),
                 ],
               ),
